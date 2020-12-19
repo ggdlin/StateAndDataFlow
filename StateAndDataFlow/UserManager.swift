@@ -8,8 +8,19 @@
 import Combine
 
 class UserManager: ObservableObject {
-    @Published var isRegistered = false
-     var name = ""
+    @Published var isRegistered: Bool {
+        didSet {
+            StateManager.shared.saveState(
+                userName: name,
+                isRegistered: isRegistered
+            )
+        }
+    }
     
+    var name = ""
+    
+    init() {
+        (name, isRegistered) = StateManager.shared.fetchState()
+    }
     
 }

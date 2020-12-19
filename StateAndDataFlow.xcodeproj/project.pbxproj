@@ -15,6 +15,8 @@
 		E63AE865258BE69A0091480C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AE864258BE69A0091480C /* RegisterView.swift */; };
 		E63AE868258BF08B0091480C /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AE867258BF08B0091480C /* UserManager.swift */; };
 		E63AE86B258BF3540091480C /* StarterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AE86A258BF3540091480C /* StarterView.swift */; };
+		E63AE876258E13D90091480C /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AE875258E13D90091480C /* StateManager.swift */; };
+		E63AE879258E32000091480C /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63AE878258E32000091480C /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		E63AE864258BE69A0091480C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		E63AE867258BF08B0091480C /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		E63AE86A258BF3540091480C /* StarterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterView.swift; sourceTree = "<group>"; };
+		E63AE875258E13D90091480C /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		E63AE878258E32000091480C /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,10 @@
 				E63AE851258B37520091480C /* StateAndDataFlowApp.swift */,
 				E63AE86A258BF3540091480C /* StarterView.swift */,
 				E63AE867258BF08B0091480C /* UserManager.swift */,
+				E63AE875258E13D90091480C /* StateManager.swift */,
 				E63AE864258BE69A0091480C /* RegisterView.swift */,
 				E63AE853258B37520091480C /* ContentView.swift */,
+				E63AE878258E32000091480C /* ButtonView.swift */,
 				E63AE861258BC3D60091480C /* TimeCounter.swift */,
 				E63AE855258B37540091480C /* Assets.xcassets */,
 				E63AE85A258B37540091480C /* Info.plist */,
@@ -152,7 +158,9 @@
 			files = (
 				E63AE862258BC3D60091480C /* TimeCounter.swift in Sources */,
 				E63AE865258BE69A0091480C /* RegisterView.swift in Sources */,
+				E63AE879258E32000091480C /* ButtonView.swift in Sources */,
 				E63AE86B258BF3540091480C /* StarterView.swift in Sources */,
+				E63AE876258E13D90091480C /* StateManager.swift in Sources */,
 				E63AE854258B37520091480C /* ContentView.swift in Sources */,
 				E63AE868258BF08B0091480C /* UserManager.swift in Sources */,
 				E63AE852258B37520091480C /* StateAndDataFlowApp.swift in Sources */,

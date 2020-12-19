@@ -15,46 +15,24 @@ struct ContentView: View {
         VStack {
             Text("Hi, \(user.name)")
                 .font(.largeTitle)
-                .offset(x: 0, y: 100)
+                .offset(x: 0, y: 80)
             Text("\(timer.counter)")
                 .font(.largeTitle)
-                .offset(x: 0, y: 200)
+                .offset(x: 0, y: 160)
             Spacer()
-            ButtonView(timer: timer)
+            ButtonView(text: "\(timer.buttonTitle)", color: .red) {
+                timer.startTimer()
+            }
             Spacer()
+            ButtonView(text: "LogOut", color: .blue) {
+                user.isRegistered = false
+            }
+                .offset(x: 0, y: -30)
         }
         
     }
 }
 
-struct ButtonView: View {
-    @StateObject var timer: TimeCounter
-    
-    
-    var body: some View {
-        Button(action: { timer.startTimer() }) {
-            Text("\(timer.buttonTitle)")
-                .font(.title)
-                .fontWeight(.bold)
-                .foregroundColor(.white)
-            
-        }
-        .frame(width: 200, height: 60)
-        .background(Color.red)
-        .cornerRadius(20)
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.black, lineWidth: 4)
-        )
-        
-    }
-    
-//    init(tapCount: Binding<Int>) {
-//        self._tapCount = tapCount
-//        self.buttonColor = buttonColor
-//    }
-    
-}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
